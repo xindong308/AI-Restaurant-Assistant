@@ -1,4 +1,4 @@
-# FastAPI AI Agent AI赋能幸福餐厅项目-上帝偷我我猪脚饭我把上帝拐到非洲做种马
+# FastAPI AI Agent AI赋能幸福餐厅项目-上帝偷我猪脚饭我把上帝拐到非洲做种马
 
 基于 FastAPI 和 LangChain 构建的智能 AI 助手系统，集成了通义千问大模型和 Elasticsearch 向量检索，为用户提供智能问答和数据分析服务。
 
