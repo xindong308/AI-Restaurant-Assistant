@@ -1,0 +1,35 @@
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+starlette>=0.27.0
+
+# LangChain
+langchain>=0.1.0
+langchain-community>=0.0.10
+
+# DashScope (Alibaba Cloud)
+dashscope>=1.14.0
+
+# Elasticsearch
+elasticsearch>=8.0.0
+
+# Redis
+redis>=5.0.0
+
+# Database
+PyMySQL>=1.1.0
+SQLAlchemy>=2.0.0
+
+# Utilities
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# Logging
+python-json-logger>=2.0.0
+
+# HTTP Client
+httpx>=0.24.0
+requests>=2.31.0
+
+# Async support
+anyio>=4.0.0
