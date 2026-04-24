@@ -2,7 +2,7 @@ from hmac import new
 from utils.logger_handler import logger
 from langchain.agents import create_agent
 from langchain_community.chat_models import ChatTongyi
-from Agent.tools.admin_agent_tools import rag_summarize,get_profit,get_now_time,get_order_info,get_order_count,fill_context_for_report
+from Agent.tools.admin_agent_tools import rag_summarize,get_profit,get_now_time,get_order_info,get_order_count,fill_context_for_report,get_order_info_by_user_name
 from Agent.tools.middleware import monitor_tool,prompt_switch
 from utils.config_handler import model_config
 import asyncio
@@ -14,7 +14,7 @@ class Agent:
         self.agent = create_agent(
             model=ChatTongyi(model=model_config["chat_model_name"]),
             system_prompt=admin_prompt,
-            tools=[rag_summarize,get_profit,get_now_time,get_order_info,get_order_count,fill_context_for_report],
+            tools=[rag_summarize,get_order_info_by_user_name,get_profit,get_now_time,get_order_info,get_order_count,fill_context_for_report],
             middleware=[monitor_tool,prompt_switch]
          )
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     async def main():
         # if i.role == "ai"
-        res = await agent.get_answer("给我生成本月销售报告")
+        res = await agent.get_answer("查询用户昵称为：神 的订单")
         res_l = res["messages"]
         reply = [i for i in res_l ]
         # for i in res_l:

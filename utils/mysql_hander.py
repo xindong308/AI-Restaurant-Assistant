@@ -144,7 +144,7 @@ db = PyMySQLUtil(
     port=3306,
     user="root",
     password="123456",
-    database="sky_take_out"
+    database=""
 )
 if __name__ == '__main__':
 
