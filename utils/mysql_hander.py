@@ -15,7 +15,7 @@ class PyMySQLUtil:
             port: int = 3306,
             user: str = "root",
             password: str = "123456",
-            database: str = "sky_take_out",
+            database: str = "",
             charset: str = "utf8mb4"
     ):
         """
